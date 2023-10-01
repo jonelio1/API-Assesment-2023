@@ -18,7 +18,7 @@ headersGlobal = {
 paramsOrderFetch = {
     'establishment': ESTABLISHMENT,
     'order_by': '-created_date',
-    'dining_option': 0,
+    'dining_option': 1,
     'limit': 1
 }
 orderFetchURL = f"https://{INSTANCE}.revelup.com/resources/Order/"
