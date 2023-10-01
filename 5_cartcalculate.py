@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def productList(x):
+def productList(x): ## Sorts products by price
     z = x.json()
     data = z['data']
     categories = data['categories']
@@ -34,7 +34,7 @@ headersGlobal = {
 menuFetchURL = f"https://{INSTANCE}.revelup.com/weborders/menu/"
 cartCalculateURL = f"https://{INSTANCE}.revelup.com/specialresources/cart/calculate/"
 
-sortedProducts = productList(requests.get(
+sortedProducts = productList(requests.get(  
     menuFetchURL, params={
         'establishment': ESTABLISHMENT,
         'mode': 6,
